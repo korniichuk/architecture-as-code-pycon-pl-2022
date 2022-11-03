@@ -3,7 +3,7 @@ from diagrams.aws.compute import EC2
 from diagrams.aws.database import RDS
 from diagrams.aws.network import ELB
 
-with Diagram("Example 1", show=False, direction="TB"):
+with Diagram("Example 1", direction="TB", show=False):
     ELB("lb") >> [EC2("worker1"),
                   EC2("worker2"),
                   EC2("worker3"),
