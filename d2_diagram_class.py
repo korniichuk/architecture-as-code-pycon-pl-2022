@@ -6,9 +6,10 @@ graph_attr = {
 }
 
 with Diagram(
-        "Example 2",
+        name="Example 2",
         filename="example2",
         outformat=["png", "dot"],
         direction="LR",
+        graph_attr=graph_attr,
         show=False):
     EC2("web")
